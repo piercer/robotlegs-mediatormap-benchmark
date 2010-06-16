@@ -74,8 +74,8 @@ package
 		
 		private function onEnterFrame(event:Event):void
 		{
-			//if (++_iTick%3==0)
-			//{
+			if (++_iTick%3==0)
+			{
 				if (_view && contains(_view))
 				{
 					removeChild(_view);
@@ -86,7 +86,7 @@ package
 					_view = new TestView();
 					addChild(_view);
 				}
-			//}
+			}
 		}
 		
 	}

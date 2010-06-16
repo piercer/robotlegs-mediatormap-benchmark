@@ -12,10 +12,7 @@ package views
 		public function TestView()
 		{
 			_createTime = getTimer();
-			for (var i:uint=0;i<2000;i++)
-			{
-				addChild(new Sprite());
-			}
+			addChild(new TestViewMovieClip());
 		}
 
 		public function get createTime():int
