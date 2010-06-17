@@ -30,7 +30,7 @@ package
 			
 			signalCommandMap.mapSignalClass(MediatorRegisteredSignal,AddResultCommand);
 			
-			mediatorMap.mapView(TestView,TestViewMediator);
+			mediatorMap.mapView(MediatedMovieClip,TestViewMediator);
 			mediatorMap.mapView(RobotLegsMediatorMapBenchmarker,RobotlegsMediatorMapBenchmarkerMediator);
 			
 			mediatorMap.createMediator(contextView);

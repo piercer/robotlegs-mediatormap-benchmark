@@ -10,12 +10,12 @@ package views
 	public class TestViewMediator extends Mediator
 	{
 
-		[Inject] public var view:TestView;
+		[Inject] public var view:MediatedMovieClip;
 		[Inject] public var mediatorRegisteredSignal:MediatorRegisteredSignal;
 
 		override public function onRegister():void
 		{
-			mediatorRegisteredSignal.dispatch(getTimer()-view.createTime);
+			mediatorRegisteredSignal.dispatch(getTimer()-TestView(view.parent.parent.parent).createTime);
 		}
 
 	}
