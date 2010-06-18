@@ -10,8 +10,6 @@ package
 	import signals.MediatorRegisteredSignal;
 	import signals.ResultsUpdatedSignal;
 	
-	import views.ITestView;
-	import views.TestView;
 	import views.TestViewMediator;
 	
 	public class RobotlegsMediatorMapBenchmarkerContext extends SignalContext
@@ -30,7 +28,7 @@ package
 			
 			signalCommandMap.mapSignalClass(MediatorRegisteredSignal,AddResultCommand);
 			
-			mediatorMap.mapView(MediatedMovieClip,TestViewMediator);
+			mediatorMap.mapView(ITestView,TestViewMediator);
 			mediatorMap.mapView(RobotLegsMediatorMapBenchmarker,RobotlegsMediatorMapBenchmarkerMediator);
 			
 			mediatorMap.createMediator(contextView);

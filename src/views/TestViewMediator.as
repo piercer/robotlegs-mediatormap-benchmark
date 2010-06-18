@@ -10,7 +10,7 @@ package views
 	public class TestViewMediator extends Mediator
 	{
 
-		[Inject] public var view:MediatedMovieClip;
+		[Inject] public var view:ITestView;
 		[Inject] public var mediatorRegisteredSignal:MediatorRegisteredSignal;
 
 		override public function onRegister():void

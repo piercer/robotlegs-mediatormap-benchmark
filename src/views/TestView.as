@@ -4,7 +4,7 @@ package views
 	import flash.display.Sprite;
 	import flash.utils.getTimer;
 	
-	public class TestView extends Sprite implements ITestView
+	public class TestView extends Sprite
 	{
 		
 		private var _createTime:int;
