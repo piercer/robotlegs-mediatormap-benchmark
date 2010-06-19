@@ -1,0 +1,17 @@
+This project measures the amount of time it takes for robotlegs to map a mediator to a particular view added to the stage.
+
+The view is designed to be full of unmediated display objects on the display list, with a meditated view nested deep down.
+
+The time measured is from creation of the complex view to the registering of the mediator for the deeply nested and mediated display object inside that view.
+
+In order to run you own benchmarks, you should clone this project and import it into your IDE of choice. You need to make sure you have the following projects source code linked in as well
+
+AS3-signals - http://github.com/robertpenner/as3-signals
+SignalCommandMap - http://github.com/robotlegs/robotlegs-framework
+TestView.swc (in the assets folder)
+Robotlegs (the particular version you are benchmarking)
+
+The reason that source code is essential is that you have to be certain that all the code you are using is linked against the right version of Robotlegs.
+
+Once you are happy with your setup you can export a release build (the debug player can behave differently to the release one) and open the resulting HTML in your favourite web browser. You will then see the view popping in and out of existence and the max/min and average times (in milliseconds) being reported.
+
